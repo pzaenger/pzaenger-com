@@ -1,7 +1,7 @@
 {
   "name": "pzaenger-com",
   "version": "0.1.0",
-  "description": "Web page pzaenger.com ",
+  "description": "Web page pzaenger.com",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
