@@ -1,18 +1,20 @@
 import React from "react";
+import Nav from "./nav/Nav";
 import "./App.css";
 
-function App(): JSX.Element {
+const App = (): JSX.Element => {
   return (
     <div className="App">
-      <header className="App-header">
+      <Nav />
+      <article role="main" className="App-body">
         <p>
           <span className="App-brand">pzaenger.com</span>
           <br />
           is under construction
         </p>
-      </header>
+      </article>
     </div>
   );
-}
+};
 
 export default App;
