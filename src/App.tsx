@@ -10,7 +10,7 @@ const App = (): JSX.Element => {
         <p>
           <span className="App-brand">pzaenger.com</span>
           <br />
-          is under construction
+          <span className="App-subheader">is under construction</span>
         </p>
       </article>
     </div>

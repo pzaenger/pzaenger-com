@@ -1,8 +1,9 @@
 .App {
-  background-color: #282c34;
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr;
+  background-color: #282c34;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .App-body {
@@ -11,7 +12,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(16px + 2vmin);
   color: white;
   font-weight: lighter;
 }
@@ -19,5 +19,47 @@
 .App-brand {
   color: #2196f3;
   letter-spacing: 5px;
-  font-size: calc(48px + 2vmin);
+  font-size: calc(64px + 2vmin);
+  -webkit-animation-name: color-transition;
+  animation-name: color-transition;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.App-subheader {
+  font-size: calc(16px + 2vmin);
+}
+
+@media (max-width: 767px) {
+  .App-brand {
+    font-size: 36px;
+  }
+
+  .App-subheader {
+    font-size: 24px;
+  }
+}
+
+@keyframes color-transition {
+  0% {
+    color: #673ab7;
+  }
+  25% {
+    color: #3f51b5;
+  }
+  50% {
+    color: #2196f3;
+  }
+  75% {
+    color: #03a9f4;
+  }
+  100% {
+    color: #00bcd4;
+  }
 }
